@@ -6,15 +6,7 @@
 //  Copyright © 2019 SijuKarunakaran. All rights reserved.
 //
 
-import UIKit
-
-extension Bundle{
-    func value(for key: Environment.Key) -> String{
-        guard let value = infoDictionary?[key.rawValue] as? String
-        else { fatalError("\(key.rawValue) not properly configured in info plist.") }
-        return value
-    }
-}
+import Foundation
 
 struct Environment {
     
