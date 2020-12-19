@@ -41,6 +41,9 @@
 		0E1A1933258E7935008825A7 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1A1930258E7935008825A7 /* ImageDownloader.swift */; };
 		0E1A1934258E7935008825A7 /* UIImageView+WebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1A1931258E7935008825A7 /* UIImageView+WebImage.swift */; };
 		0E1A194B258E7DD1008825A7 /* Bundle+Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1A194A258E7DD1008825A7 /* Bundle+Environment.swift */; };
+		0E1A1954258E7F35008825A7 /* GetImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1A1950258E7F34008825A7 /* GetImages.swift */; };
+		0E1A1955258E7F35008825A7 /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1A1952258E7F34008825A7 /* Identity.swift */; };
+		0E1A1956258E7F35008825A7 /* ImageSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1A1953258E7F34008825A7 /* ImageSearchResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +105,9 @@
 		0E1A1931258E7935008825A7 /* UIImageView+WebImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+WebImage.swift"; sourceTree = "<group>"; };
 		0E1A1938258E798B008825A7 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		0E1A194A258E7DD1008825A7 /* Bundle+Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Environment.swift"; sourceTree = "<group>"; };
+		0E1A1950258E7F34008825A7 /* GetImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetImages.swift; sourceTree = "<group>"; };
+		0E1A1952258E7F34008825A7 /* Identity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identity.swift; sourceTree = "<group>"; };
+		0E1A1953258E7F34008825A7 /* ImageSearchResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSearchResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +160,8 @@
 			children = (
 				0E1A18BC258E76F1008825A7 /* AppDelegate.swift */,
 				0E1A18BE258E76F1008825A7 /* SceneDelegate.swift */,
+				0E1A194F258E7F34008825A7 /* APIRequests */,
+				0E1A1951258E7F34008825A7 /* Model */,
 				0E1A1942258E7AA8008825A7 /* Environment */,
 				0E1A192E258E7935008825A7 /* WebImageClient */,
 				0E1A1911258E78E0008825A7 /* MVVM */,
@@ -278,6 +286,23 @@
 				0E1A194A258E7DD1008825A7 /* Bundle+Environment.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		0E1A194F258E7F34008825A7 /* APIRequests */ = {
+			isa = PBXGroup;
+			children = (
+				0E1A1950258E7F34008825A7 /* GetImages.swift */,
+			);
+			path = APIRequests;
+			sourceTree = "<group>";
+		};
+		0E1A1951258E7F34008825A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0E1A1952258E7F34008825A7 /* Identity.swift */,
+				0E1A1953258E7F34008825A7 /* ImageSearchResponse.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,6 +439,7 @@
 				0E1A1934258E7935008825A7 /* UIImageView+WebImage.swift in Sources */,
 				0E1A1929258E7906008825A7 /* Observer.swift in Sources */,
 				0E1A18C1258E76F1008825A7 /* ViewController.swift in Sources */,
+				0E1A1954258E7F35008825A7 /* GetImages.swift in Sources */,
 				0E1A191C258E78E0008825A7 /* Initializable.swift in Sources */,
 				0E1A194B258E7DD1008825A7 /* Bundle+Environment.swift in Sources */,
 				0E1A1905258E7881008825A7 /* APIClient.swift in Sources */,
@@ -437,7 +463,9 @@
 				0E1A1903258E7881008825A7 /* Environment.swift in Sources */,
 				0E1A190B258E7881008825A7 /* ContentType.swift in Sources */,
 				0E1A1922258E78E0008825A7 /* DataStore.swift in Sources */,
+				0E1A1956258E7F35008825A7 /* ImageSearchResponse.swift in Sources */,
 				0E1A190D258E7881008825A7 /* APIRequest.swift in Sources */,
+				0E1A1955258E7F35008825A7 /* Identity.swift in Sources */,
 				0E1A190C258E7881008825A7 /* ErrorResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
