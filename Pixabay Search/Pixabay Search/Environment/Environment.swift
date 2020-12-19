@@ -15,8 +15,11 @@ struct Environment {
         case apiKey = "API_KEY"
     }
     
-    static let apiBaseUrl: String = {
-        return Bundle.main.value(for: .apiBaseUrl)
+    static let apiBaseUrl: URL = {
+        guard let url = URL(string: Bundle.main.value(for: .apiBaseUrl)
+                                .replacingOccurrences(of: "\\", with: ""))
+        else { fatalError("\(Key.apiBaseUrl.rawValue) is not a properly URL.") }
+        return url
     }()
     
     static let apiKey: String = {
