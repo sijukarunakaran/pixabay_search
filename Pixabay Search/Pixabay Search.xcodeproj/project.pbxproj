@@ -35,6 +35,8 @@
 		0E1A1920258E78E0008825A7 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1A1918258E78E0008825A7 /* UIViewController+Alert.swift */; };
 		0E1A1921258E78E0008825A7 /* ViewModelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1A1919258E78E0008825A7 /* ViewModelState.swift */; };
 		0E1A1922258E78E0008825A7 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1A191A258E78E0008825A7 /* DataStore.swift */; };
+		0E1A1929258E7906008825A7 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1A1927258E7906008825A7 /* Observer.swift */; };
+		0E1A192A258E7906008825A7 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1A1928258E7906008825A7 /* Observable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,8 @@
 		0E1A1918258E78E0008825A7 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		0E1A1919258E78E0008825A7 /* ViewModelState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelState.swift; sourceTree = "<group>"; };
 		0E1A191A258E78E0008825A7 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		0E1A1927258E7906008825A7 /* Observer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		0E1A1928258E7906008825A7 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +212,7 @@
 		0E1A1911258E78E0008825A7 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				0E1A1926258E7906008825A7 /* Observer */,
 				0E1A1912258E78E0008825A7 /* View.swift */,
 				0E1A1913258E78E0008825A7 /* Initializable.swift */,
 				0E1A1914258E78E0008825A7 /* ViewModalAttachable.swift */,
@@ -226,6 +231,15 @@
 				0E1A1918258E78E0008825A7 /* UIViewController+Alert.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0E1A1926258E7906008825A7 /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				0E1A1927258E7906008825A7 /* Observer.swift */,
+				0E1A1928258E7906008825A7 /* Observable.swift */,
+			);
+			path = Observer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E1A191B258E78E0008825A7 /* View.swift in Sources */,
+				0E1A1929258E7906008825A7 /* Observer.swift in Sources */,
 				0E1A18C1258E76F1008825A7 /* ViewController.swift in Sources */,
 				0E1A191C258E78E0008825A7 /* Initializable.swift in Sources */,
 				0E1A1905258E7881008825A7 /* APIClient.swift in Sources */,
@@ -368,6 +383,7 @@
 				0E1A1920258E78E0008825A7 /* UIViewController+Alert.swift in Sources */,
 				0E1A1906258E7881008825A7 /* APIErrorResponse.swift in Sources */,
 				0E1A191D258E78E0008825A7 /* ViewModalAttachable.swift in Sources */,
+				0E1A192A258E7906008825A7 /* Observable.swift in Sources */,
 				0E1A1904258E7881008825A7 /* APIHeader.swift in Sources */,
 				0E1A1907258E7881008825A7 /* HTTPParameter.swift in Sources */,
 				0E1A191F258E78E0008825A7 /* UIViewController+HUD.swift in Sources */,
