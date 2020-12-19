@@ -1,0 +1,11 @@
+//
+//  Development.xcconfig
+//  Pixabay Search
+//
+//  Created by Siju Karunakaran on 19/12/20.
+//
+
+
+API_BASE_URL = https:\/\/pixabay.com/api
+
+API_KEY = 19561746-e12459bfafea98a60b14037b6

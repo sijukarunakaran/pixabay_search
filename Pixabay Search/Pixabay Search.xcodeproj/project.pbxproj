@@ -99,6 +99,7 @@
 		0E1A192F258E7935008825A7 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		0E1A1930258E7935008825A7 /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		0E1A1931258E7935008825A7 /* UIImageView+WebImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+WebImage.swift"; sourceTree = "<group>"; };
+		0E1A1938258E798B008825A7 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +152,7 @@
 			children = (
 				0E1A18BC258E76F1008825A7 /* AppDelegate.swift */,
 				0E1A18BE258E76F1008825A7 /* SceneDelegate.swift */,
+				0E1A1942258E7AA8008825A7 /* Environment */,
 				0E1A192E258E7935008825A7 /* WebImageClient */,
 				0E1A1911258E78E0008825A7 /* MVVM */,
 				0E1A18F3258E7880008825A7 /* APIClient */,
@@ -185,7 +187,6 @@
 			isa = PBXGroup;
 			children = (
 				0E1A18F4258E7881008825A7 /* APIError.swift */,
-				0E1A18F5258E7881008825A7 /* Environment.swift */,
 				0E1A18F6258E7881008825A7 /* APIHeader.swift */,
 				0E1A18F7258E7881008825A7 /* APIClient.swift */,
 				0E1A18F8258E7881008825A7 /* APIErrorResponse.swift */,
@@ -257,6 +258,15 @@
 				0E1A1931258E7935008825A7 /* UIImageView+WebImage.swift */,
 			);
 			path = WebImageClient;
+			sourceTree = "<group>";
+		};
+		0E1A1942258E7AA8008825A7 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				0E1A18F5258E7881008825A7 /* Environment.swift */,
+				0E1A1938258E798B008825A7 /* Development.xcconfig */,
+			);
+			path = Environment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -473,6 +483,7 @@
 /* Begin XCBuildConfiguration section */
 		0E1A18E1258E76FF008825A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E1A1938258E798B008825A7 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -534,6 +545,7 @@
 		};
 		0E1A18E2258E76FF008825A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E1A1938258E798B008825A7 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
