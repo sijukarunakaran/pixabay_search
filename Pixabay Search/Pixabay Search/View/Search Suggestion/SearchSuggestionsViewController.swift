@@ -11,7 +11,7 @@ protocol SuggestedSearch: class {
     func didSelectSuggestedSearch(keyword: String)
 }
 
-class SearchSuggestionsViewController: UITableViewController {
+class SearchSuggestionsViewController: TableView<SearchSuggestionViewModel> {
     
     weak var suggestedSearchDelegate: SuggestedSearch?
     
@@ -22,39 +22,37 @@ class SearchSuggestionsViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
+    
+    override func viewWillAppear(_ animated: Bool){
+        super.viewWillAppear(animated)
+        viewModel.refresh()
     }
+    
+    override func reload(){
+        self.tableView.reloadData();
+    }
+}
+
+extension SearchSuggestionsViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 10
+        return viewModel.numberOfSuggestions
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
-        // Configure the cell...
-        cell.textLabel?.text = "\(indexPath)"
+        cell.textLabel?.text = viewModel.suggestion(for: indexPath.row)
 
         return cell
     }
     
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        suggestedSearchDelegate?.didSelectSuggestedSearch(keyword: "")
+        guard let keyword = viewModel.suggestion(for: indexPath.row) else { return }
+        suggestedSearchDelegate?.didSelectSuggestedSearch(keyword: keyword)
     }
 
 }

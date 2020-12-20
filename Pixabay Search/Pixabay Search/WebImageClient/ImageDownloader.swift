@@ -1,6 +1,6 @@
 //
 //  ImageDownloader.swift
-//  ImageDownloader
+//  Pixabay Search
 //
 //  Created by Siju on 18/12/20.
 //

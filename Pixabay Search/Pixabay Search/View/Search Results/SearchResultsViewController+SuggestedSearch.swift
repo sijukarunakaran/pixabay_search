@@ -10,7 +10,8 @@ import UIKit
 extension SearchResultsViewController: SuggestedSearch {
     func didSelectSuggestedSearch(keyword: String){
         viewModel.searchKeyword = keyword
-        searchController.resignFirstResponder()
+        searchController.searchBar.text = keyword
+        searchController.dismiss(animated: true, completion: nil)
         viewModel.search()
     }
 }

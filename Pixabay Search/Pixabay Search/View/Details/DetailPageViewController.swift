@@ -27,7 +27,6 @@ class DetailPageViewController: PageView<DetailPageViewModel> {
             setViewControllers([firstView], direction: .forward, animated: true, completion: nil)
         }
         self.hidePageControl()
-        self.navigationController?.hidesBarsOnTap = true
     }
     
     private func hidePageControl(){

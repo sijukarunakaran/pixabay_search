@@ -17,7 +17,6 @@ class SearchResultsViewController: View<ImageSearchViewModel> {
         let searchSuggestionsViewController = SearchSuggestionsViewController.loadFromStoryboard()
         searchSuggestionsViewController?.suggestedSearchDelegate = self
         let search = UISearchController(searchResultsController: searchSuggestionsViewController)
-        search.searchResultsUpdater = self
         search.searchBar.delegate = self
         search.obscuresBackgroundDuringPresentation = false
         search.searchBar.placeholder = "Type something here to search"
@@ -28,10 +27,16 @@ class SearchResultsViewController: View<ImageSearchViewModel> {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.searchController = searchController
+        self.navigationItem.title = "Pixbay search"
     }
     
     override func reload() {
         self.collectionView.reloadData()
+    }
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if(self.collectionView.contentOffset.y >= (self.collectionView.contentSize.height - self.collectionView.bounds.size.height)) {
+            viewModel.search(nextPage: true)
+        }
     }
     
 }

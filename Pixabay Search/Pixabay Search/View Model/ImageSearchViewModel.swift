@@ -27,7 +27,7 @@ class ImageSearchViewModel: ViewModel {
         guard let hits = searchResult?.hits, (0..<hits.count) ~= index else {
             return nil
         }
-        return searchResult?.hits[index].previewURL
+        return searchResult?.hits[index].webformatURL
     }
     
     func detailPageViewModel(for index: Int) -> DetailPageViewModel?{
@@ -41,21 +41,38 @@ class ImageSearchViewModel: ViewModel {
     }
     
     
-    func search(){
+    func search(nextPage: Bool = false){
+        guard state.value != .inProgress else { return }
+        if nextPage && searchResult == nil{
+            return
+        }
         if searchKeyword.isEmpty{
             self.error = APIError.server(message: "Please enter a keyword to search.")
             self.state.value = ViewModelState.error
             return
         }
         self.state.value = .inProgress
+        
         let dataStoreAction = curry(ImageSearchDataStore()
-                                        .getAll(keyword:page:completion:))(searchKeyword)(page)
+                                        .getAll(keyword:page:completion:))(searchKeyword)(nextPage ? page + 1 : page)
         get(dataStoreAction) { (result) in
-            if self.searchResult == nil{
+            if result.hits.count > 1{
+                self.saveForSuggestion()
+                self.page += 1
+            }
+            if !nextPage{
                 self.searchResult = result
                 return
             }
             self.searchResult = self.searchResult?.merge(with: result)
+        }
+    }
+    
+    private func saveForSuggestion(){
+        let dataSore = SuggestionsDataStore()
+        let dataStoreAction = curry(dataSore.create(_:completion:))(searchKeyword)
+        get(dataStoreAction) { (result) in
+            print("\(result) saved to suggestions")
         }
     }
     

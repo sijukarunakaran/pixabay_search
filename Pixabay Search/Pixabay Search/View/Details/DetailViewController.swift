@@ -9,7 +9,7 @@ import UIKit
 
 class DetailViewController: View<DetailViewModel> {
     
-    var zoomImageView: ImageZoomView?
+    @IBOutlet weak var imageView: UIImageView?
     
     static func loadFromStoryboard(_ viewModel: DetailViewModel) -> DetailViewController? {
         let storyboard = UIStoryboard(name: "Main", bundle: .main)
@@ -24,10 +24,7 @@ class DetailViewController: View<DetailViewModel> {
     }
     
     override func reload() {
-        guard let image = viewModel.largeImage else { return }
-        self.zoomImageView?.removeFromSuperview()
-        self.zoomImageView = ImageZoomView(frame: self.view.bounds, image: image)
-        self.view.addSubview(self.zoomImageView!)
+        imageView?.image = viewModel.largeImage
     }
 
 }

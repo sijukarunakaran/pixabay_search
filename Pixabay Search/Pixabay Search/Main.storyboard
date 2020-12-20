@@ -10,55 +10,6 @@
     </dependencies>
     <scenes>
         <!--Search Results View Controller-->
-        <scene sceneID="6aH-L5-4UA">
-            <objects>
-                <collectionViewController id="fW2-I6-Nhl" customClass="SearchResultsViewController" customModule="Pixabay_Search" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="c8U-OM-E0o">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1nO-Bz-gJI">
-                            <size key="itemSize" width="320" height="200"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="TRr-dz-kZt" customClass="Cell" customModule="Pixabay_Search" customModuleProvider="target">
-                                <rect key="frame" x="47" y="0.0" width="320" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aDJ-Pa-mfX">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yqZ-JY-7YQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
-                                        </imageView>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="yqZ-JY-7YQ" firstAttribute="top" secondItem="aDJ-Pa-mfX" secondAttribute="top" id="2ZC-3r-76d"/>
-                                        <constraint firstAttribute="trailing" secondItem="yqZ-JY-7YQ" secondAttribute="trailing" id="PH3-zo-X8E"/>
-                                        <constraint firstItem="yqZ-JY-7YQ" firstAttribute="leading" secondItem="aDJ-Pa-mfX" secondAttribute="leading" id="bde-yK-rzX"/>
-                                        <constraint firstAttribute="bottom" secondItem="yqZ-JY-7YQ" secondAttribute="bottom" id="ojv-AD-zTw"/>
-                                    </constraints>
-                                </collectionViewCellContentView>
-                                <connections>
-                                    <outlet property="imageView" destination="yqZ-JY-7YQ" id="Sa3-Sk-6yW"/>
-                                </connections>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="fW2-I6-Nhl" id="UIl-OL-js9"/>
-                            <outlet property="delegate" destination="fW2-I6-Nhl" id="P1G-Mw-sdW"/>
-                        </connections>
-                    </collectionView>
-                    <navigationItem key="navigationItem" id="oXx-Sb-swU"/>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DoZ-SC-2yL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="516" y="-745"/>
-        </scene>
-        <!--Search Results View Controller-->
         <scene sceneID="XK9-qF-XR5">
             <objects>
                 <viewController id="7QS-Re-7yX" customClass="SearchResultsViewController" customModule="Pixabay_Search" customModuleProvider="target" sceneMemberID="viewController">
@@ -83,7 +34,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LQN-2u-1tt">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LQN-2u-1tt">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                                                 </imageView>
                                             </subviews>
@@ -121,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Ab-U2-pNw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1135" y="33"/>
+            <point key="canvasLocation" x="997" y="31"/>
         </scene>
         <!--Search Suggestions View Controller-->
         <scene sceneID="bCh-bI-PlA">
@@ -158,7 +109,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nd0-KO-I7c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2275" y="379"/>
+            <point key="canvasLocation" x="1755" y="31"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="9U8-C1-hxK">
@@ -167,9 +118,23 @@
                     <view key="view" contentMode="scaleToFill" id="fDM-Wq-C59">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cQU-lL-e3d">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="WIW-ga-a7r"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WIW-ga-a7r" firstAttribute="bottom" secondItem="cQU-lL-e3d" secondAttribute="bottom" id="AVo-Mn-eq3"/>
+                            <constraint firstItem="cQU-lL-e3d" firstAttribute="top" secondItem="WIW-ga-a7r" secondAttribute="top" id="FnO-mJ-oqw"/>
+                            <constraint firstItem="cQU-lL-e3d" firstAttribute="leading" secondItem="WIW-ga-a7r" secondAttribute="leading" id="dLv-ea-6fP"/>
+                            <constraint firstItem="WIW-ga-a7r" firstAttribute="trailing" secondItem="cQU-lL-e3d" secondAttribute="trailing" id="npf-8G-yag"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="cQU-lL-e3d" id="PdY-fE-4VB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gaT-9I-78f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="A0n-sQ-Sj5">
@@ -177,12 +142,12 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
             </objects>
-            <point key="canvasLocation" x="2850.7246376811595" y="32.8125"/>
+            <point key="canvasLocation" x="4338" y="27"/>
         </scene>
         <!--Detail Page View Controller-->
         <scene sceneID="csi-Am-hNK">
             <objects>
-                <pageViewController storyboardIdentifier="DetailPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="xK4-WY-q3o" customClass="DetailPageViewController" customModule="Pixabay_Search" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="DetailPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="none" id="xK4-WY-q3o" customClass="DetailPageViewController" customModule="Pixabay_Search" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yNn-Vc-Wee" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3686" y="27"/>
