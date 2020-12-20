@@ -47,7 +47,7 @@ class ImageSearchViewModel: ViewModel {
             return
         }
         if searchKeyword.isEmpty{
-            self.error = APIError.server(message: "Please enter a keyword to search.")
+            self.error = PSError.generic(message: "Please enter a keyword to search.")
             self.state.value = ViewModelState.error
             return
         }
@@ -59,6 +59,10 @@ class ImageSearchViewModel: ViewModel {
             if result.hits.count > 1{
                 self.saveForSuggestion()
                 self.page += 1
+            }
+            else{
+                self.error = PSError.generic(message: "Sorry, no matches found for your search.")
+                self.state.value = ViewModelState.error
             }
             if !nextPage{
                 self.searchResult = result

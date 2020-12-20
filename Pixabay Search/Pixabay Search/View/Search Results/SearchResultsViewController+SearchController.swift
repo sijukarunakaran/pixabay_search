@@ -7,13 +7,6 @@
 
 import UIKit
 
-extension SearchResultsViewController: UISearchControllerDelegate{
-    func presentSearchController(_ searchController: UISearchController) {
-        searchController.showsSearchResultsController = true
-    }
-
-}
-
 extension SearchResultsViewController: UISearchBarDelegate{
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         viewModel.searchKeyword = searchBar.text ?? ""

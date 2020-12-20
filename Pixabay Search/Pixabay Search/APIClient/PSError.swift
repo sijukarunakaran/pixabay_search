@@ -12,7 +12,7 @@ public enum PSError: Error {
     case encoding
     case decoding
     case badURL
-    case server(message: String)
+    case generic(message: String)
     case noSuffientData
 }
 extension PSError: LocalizedError {
@@ -22,7 +22,7 @@ extension PSError: LocalizedError {
             return "JSON Decode Error"
         case .encoding:
             return "JSON Encode Error"
-        case .server(let message):
+        case .generic(let message):
             return message
         case .badURL:
             return "Bad URL"

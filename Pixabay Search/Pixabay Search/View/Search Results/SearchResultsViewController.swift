@@ -20,6 +20,7 @@ class SearchResultsViewController: View<ImageSearchViewModel> {
         search.searchBar.delegate = self
         search.obscuresBackgroundDuringPresentation = false
         search.searchBar.placeholder = "Type something here to search"
+        search.showsSearchResultsController = true
         return search
     }()
 
