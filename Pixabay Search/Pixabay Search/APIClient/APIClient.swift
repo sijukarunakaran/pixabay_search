@@ -15,7 +15,7 @@ public typealias ResultCallback<Value> = (Result<Value, Error>) -> Void
 /// Implementation of a generic-based API client
 public class APIClient {
     
-    
+    static let shared = APIClient()
 	private let session = URLSession(configuration: .default)
     public init() {
         
@@ -24,10 +24,13 @@ public class APIClient {
 	/// Sends a request to server, calling the completion method when finished
 	public func perform<T: APIRequest>(_ request: T, completion: @escaping ResultCallback<T.SuccessResponseType>) {
         let urlRequest = request.urlRequest
+        print(urlRequest)
 		let task = session.dataTask(with: urlRequest) { data, response, error in
 			if let data = data {
+                print(String(data: data, encoding: .utf8)!)
                 self.decode(request, data: data, completion: completion)
 			} else if let error = error {
+                print(error)
 				completion(.failure(error))
 			}
 		}

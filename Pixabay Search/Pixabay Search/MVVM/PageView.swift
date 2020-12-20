@@ -1,14 +1,13 @@
 //
-//  View.swift
+//  PageView.swift
 //  Pixabay Search
 //
-//  Created by Siju on 22/01/20.
-//  Copyright © 2020 Siju. All rights reserved.
+//  Created by Siju Karunakaran on 20/12/20.
 //
 
 import UIKit
 
-open class View<T: ViewModel>: UIViewController, ViewModalAttachable, ObserverProtocol  {
+open class PageView<T: ViewModel>: UIPageViewController, ViewModalAttachable, ObserverProtocol  {
     
     public typealias ViewModelType = T
     
@@ -22,7 +21,6 @@ open class View<T: ViewModel>: UIViewController, ViewModalAttachable, ObserverPr
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         viewModel.state.addObserver(self, completion: didChange(_:))
-        didChange(viewModel.state.value)
     }
     
     open func showActivityIndicator(){

@@ -1,6 +1,6 @@
 //
-//  ImageLoader.swift
-//  ImageLoader
+//  Pixabay Search.swift
+//  Pixabay Search
 //
 //  Created by Siju on 18/12/20.
 //

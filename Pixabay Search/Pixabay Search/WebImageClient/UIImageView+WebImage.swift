@@ -1,6 +1,6 @@
 //
 //  UIImageView+WebImage.swift
-//  ImageLoader
+//  Pixabay Search
 //
 //  Created by Siju on 18/12/20.
 //

@@ -1,6 +1,6 @@
 //
 //  ImageSearchResponse.swift
-//  ImageLoader
+//  Pixabay Search
 //
 //  Created by Siju on 18/12/20.
 //
@@ -10,6 +10,14 @@ import Foundation
 struct ImageSearchResponse: Decodable {
     let total, totalHits: Int
     let hits: [Hit]
+    
+    func merge(with response: ImageSearchResponse) -> ImageSearchResponse{
+        ImageSearchResponse(
+            total: total + response.total,
+            totalHits: totalHits + response.totalHits,
+            hits: hits + response.hits
+        )
+    }
 }
 
 struct Hit: Decodable {
