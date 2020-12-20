@@ -8,14 +8,14 @@
 
 import Foundation
 
-public enum APIError: Error {
+public enum PSError: Error {
     case encoding
     case decoding
     case badURL
     case server(message: String)
     case noSuffientData
 }
-extension APIError: LocalizedError {
+extension PSError: LocalizedError {
     public var errorDescription: String? {
         switch self {
         case .decoding:
