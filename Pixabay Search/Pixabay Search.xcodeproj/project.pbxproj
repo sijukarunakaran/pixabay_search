@@ -60,6 +60,9 @@
 		0E4BD29F258F5946001C1093 /* DetailPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BD29E258F5946001C1093 /* DetailPageViewModel.swift */; };
 		0E4BD2A4258F5B30001C1093 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BD2A3258F5B30001C1093 /* PageView.swift */; };
 		0E4BD2A9258F5CDC001C1093 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BD2A8258F5CDC001C1093 /* DetailViewModel.swift */; };
+		71D3308142ECA490706968C2 /* Pods_Pixabay_Search_Pixabay_SearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD4EFF220A6302FCFEEF5A2 /* Pods_Pixabay_Search_Pixabay_SearchUITests.framework */; };
+		D7E2D5A7640299C6814B1EC1 /* Pods_Pixabay_Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82BAD387D5DDA60157949301 /* Pods_Pixabay_Search.framework */; };
+		FAD2A9CC8E9358DB8CBD8C20 /* Pods_Pixabay_SearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F227DE69B3DAFE652504A35E /* Pods_Pixabay_SearchTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +143,15 @@
 		0E4BD29E258F5946001C1093 /* DetailPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageViewModel.swift; sourceTree = "<group>"; };
 		0E4BD2A3258F5B30001C1093 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		0E4BD2A8258F5CDC001C1093 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		1485E93BEE783A3FEC95894A /* Pods-Pixabay SearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pixabay SearchTests.debug.xcconfig"; path = "Target Support Files/Pods-Pixabay SearchTests/Pods-Pixabay SearchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		441250F6D07B27DF281364CB /* Pods-Pixabay SearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pixabay SearchTests.release.xcconfig"; path = "Target Support Files/Pods-Pixabay SearchTests/Pods-Pixabay SearchTests.release.xcconfig"; sourceTree = "<group>"; };
+		52C46F7745260B99A87830E9 /* Pods-Pixabay Search-Pixabay SearchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pixabay Search-Pixabay SearchUITests.release.xcconfig"; path = "Target Support Files/Pods-Pixabay Search-Pixabay SearchUITests/Pods-Pixabay Search-Pixabay SearchUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6D7A833A9A7B09FA7D59C4F8 /* Pods-Pixabay Search.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pixabay Search.debug.xcconfig"; path = "Target Support Files/Pods-Pixabay Search/Pods-Pixabay Search.debug.xcconfig"; sourceTree = "<group>"; };
+		82BAD387D5DDA60157949301 /* Pods_Pixabay_Search.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pixabay_Search.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CD4EFF220A6302FCFEEF5A2 /* Pods_Pixabay_Search_Pixabay_SearchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pixabay_Search_Pixabay_SearchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C695DFD42F0E7E4011CF07EB /* Pods-Pixabay Search.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pixabay Search.release.xcconfig"; path = "Target Support Files/Pods-Pixabay Search/Pods-Pixabay Search.release.xcconfig"; sourceTree = "<group>"; };
+		E0908D1197E344D7408F21E0 /* Pods-Pixabay Search-Pixabay SearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pixabay Search-Pixabay SearchUITests.debug.xcconfig"; path = "Target Support Files/Pods-Pixabay Search-Pixabay SearchUITests/Pods-Pixabay Search-Pixabay SearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F227DE69B3DAFE652504A35E /* Pods_Pixabay_SearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pixabay_SearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +159,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7E2D5A7640299C6814B1EC1 /* Pods_Pixabay_Search.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD2A9CC8E9358DB8CBD8C20 /* Pods_Pixabay_SearchTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +175,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71D3308142ECA490706968C2 /* Pods_Pixabay_Search_Pixabay_SearchUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +189,8 @@
 				0E1A18D2258E76FF008825A7 /* Pixabay SearchTests */,
 				0E1A18DD258E76FF008825A7 /* Pixabay SearchUITests */,
 				0E1A18BA258E76F1008825A7 /* Products */,
+				221AF865B399DDF5BD18557B /* Pods */,
+				CACDCBC193E92E35CA78C7F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -393,6 +410,30 @@
 			path = "Search Results";
 			sourceTree = "<group>";
 		};
+		221AF865B399DDF5BD18557B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D7A833A9A7B09FA7D59C4F8 /* Pods-Pixabay Search.debug.xcconfig */,
+				C695DFD42F0E7E4011CF07EB /* Pods-Pixabay Search.release.xcconfig */,
+				E0908D1197E344D7408F21E0 /* Pods-Pixabay Search-Pixabay SearchUITests.debug.xcconfig */,
+				52C46F7745260B99A87830E9 /* Pods-Pixabay Search-Pixabay SearchUITests.release.xcconfig */,
+				1485E93BEE783A3FEC95894A /* Pods-Pixabay SearchTests.debug.xcconfig */,
+				441250F6D07B27DF281364CB /* Pods-Pixabay SearchTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CACDCBC193E92E35CA78C7F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82BAD387D5DDA60157949301 /* Pods_Pixabay_Search.framework */,
+				9CD4EFF220A6302FCFEEF5A2 /* Pods_Pixabay_Search_Pixabay_SearchUITests.framework */,
+				F227DE69B3DAFE652504A35E /* Pods_Pixabay_SearchTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -400,9 +441,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E1A18E3258E76FF008825A7 /* Build configuration list for PBXNativeTarget "Pixabay Search" */;
 			buildPhases = (
+				149B9645D374AC3C5C88B0D3 /* [CP] Check Pods Manifest.lock */,
 				0E1A18B5258E76F1008825A7 /* Sources */,
 				0E1A18B6258E76F1008825A7 /* Frameworks */,
 				0E1A18B7258E76F1008825A7 /* Resources */,
+				725BF10146327676CF8772F8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -417,6 +460,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E1A18E6258E76FF008825A7 /* Build configuration list for PBXNativeTarget "Pixabay SearchTests" */;
 			buildPhases = (
+				C6CC1DA0673014E2C0DBF895 /* [CP] Check Pods Manifest.lock */,
 				0E1A18CB258E76FF008825A7 /* Sources */,
 				0E1A18CC258E76FF008825A7 /* Frameworks */,
 				0E1A18CD258E76FF008825A7 /* Resources */,
@@ -435,9 +479,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E1A18E9258E76FF008825A7 /* Build configuration list for PBXNativeTarget "Pixabay SearchUITests" */;
 			buildPhases = (
+				A9176DE444A132C4FBAA0277 /* [CP] Check Pods Manifest.lock */,
 				0E1A18D6258E76FF008825A7 /* Sources */,
 				0E1A18D7258E76FF008825A7 /* Frameworks */,
 				0E1A18D8258E76FF008825A7 /* Resources */,
+				89E8BF86462A838518CFFB37 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -517,6 +563,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		149B9645D374AC3C5C88B0D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pixabay Search-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		725BF10146327676CF8772F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pixabay Search/Pods-Pixabay Search-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pixabay Search/Pods-Pixabay Search-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pixabay Search/Pods-Pixabay Search-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89E8BF86462A838518CFFB37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pixabay Search-Pixabay SearchUITests/Pods-Pixabay Search-Pixabay SearchUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pixabay Search-Pixabay SearchUITests/Pods-Pixabay Search-Pixabay SearchUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pixabay Search-Pixabay SearchUITests/Pods-Pixabay Search-Pixabay SearchUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9176DE444A132C4FBAA0277 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pixabay Search-Pixabay SearchUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6CC1DA0673014E2C0DBF895 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pixabay SearchTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0E1A18B5258E76F1008825A7 /* Sources */ = {
@@ -737,6 +886,7 @@
 		};
 		0E1A18E4258E76FF008825A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D7A833A9A7B09FA7D59C4F8 /* Pods-Pixabay Search.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -755,6 +905,7 @@
 		};
 		0E1A18E5258E76FF008825A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C695DFD42F0E7E4011CF07EB /* Pods-Pixabay Search.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -773,6 +924,7 @@
 		};
 		0E1A18E7258E76FF008825A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1485E93BEE783A3FEC95894A /* Pods-Pixabay SearchTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -794,6 +946,7 @@
 		};
 		0E1A18E8258E76FF008825A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 441250F6D07B27DF281364CB /* Pods-Pixabay SearchTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -815,6 +968,7 @@
 		};
 		0E1A18EA258E76FF008825A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0908D1197E344D7408F21E0 /* Pods-Pixabay Search-Pixabay SearchUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -834,6 +988,7 @@
 		};
 		0E1A18EB258E76FF008825A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52C46F7745260B99A87830E9 /* Pods-Pixabay Search-Pixabay SearchUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

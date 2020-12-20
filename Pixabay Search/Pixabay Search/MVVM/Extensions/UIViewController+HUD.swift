@@ -7,17 +7,17 @@
 //
 
 import UIKit
-//import NVActivityIndicatorView
+import NVActivityIndicatorView
 
 
-extension UIViewController{//}: NVActivityIndicatorViewable{
+extension UIViewController: NVActivityIndicatorViewable{
     func showHUD(message: String?) {
         let size = CGSize(width: 30, height: 30)
-//        self.startAnimating(size, message: message ?? "", type: .ballClipRotate)
+        self.startAnimating(size, message: message ?? "", type: .ballClipRotate)
     }
     
     func hideHUD() {
-//        self.stopAnimating()
+        self.stopAnimating()
     }
     
 }
